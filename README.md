@@ -1,2 +1,2 @@
 # BLKCTTokenRinkeby
-myblockcities.github.io/BlkctTokenRinkeby
+[Buy tokens on the rinkeby network!](http://myblockcities.github.io/BLKCTTokenRinkeby)
