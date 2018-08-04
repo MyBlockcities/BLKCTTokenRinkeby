@@ -9,4 +9,4 @@ Steps to buy the BLKCT tokens:-
 5. You can now buy BLKCT Tokens. A MetaMask popup should prompt you to accept the transaction. Once you accept, the number of tokens you have purchased will be reflected from your account. (The rinkeby network takes sometime to update, refresh the page to see the changes)
 
 
-You have sucessfully purchased our test Blockcities Tokens! Thank you.
+You will have now sucessfully purchased our test Blockcities Tokens! Thank you.
