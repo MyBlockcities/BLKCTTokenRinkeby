@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blockcities Token ICO Sale</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container" style="width: 650px;">
-      <div class="row">
-        <div class="col-lg-12">
-            <h1 class="text-center">BLOCKCITIES TOKEN ICO SALE</h1>
-            <hr/>
-            <br/>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blockcities Token ICO Sale</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container" style="width: 650px;">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">BLOCKCITIES TOKEN ICO SALE</h1>
+        <hr/>
+      </div>
+      <div id="loader">
+        <p class="text-center">Loading...</p>
+      </div>
+      <div id="content" class="text-center" style="display: none;">
+        <img src="blkct.png" height="300" width="300">
+        <p>
+          Introducing "Blockcities Token" (BLKCT)!
+          Token price is <span class="token-price"></span> Ether. You currently have <span class="blkct-balance"></span>&nbsp;BLKCT.
+        </p>
+        <br/>
+        <form onSubmit="App.buyTokens(); return false;" role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+            </input>
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
+            </span>
+          </div>
         </div>
-        <div id="loader">
-          <p class="text-center">Loading...</p>
-        </div>
-        <div id="content" class="text-center" style="display: none;">
-          <p>
-            Introducing "Blockcities Token" (BLKCT)!
-            Token price is <span class="token-price"></span> Ether. You currently have <span class="blkct-balance"></span>&nbsp;BLKCT.
-          </p>
-          <br/>
-          <form onSubmit="App.buyTokens(); return false;" role="form">
-            <div class="form-group">
-              <div class="input-group">
-                <input id="numberOfTokens" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
-                </input>
-                <span class="input-group-btn">
-                  <button type="submit" class="btn btn-primary btn-lg">Buy Tokens</button>
-                </span>
-              </div>
-            </div>
-          </form>
-          <br>
-           <div class="progress">
-              <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
-          <hr>
-          <p id="accountAddress"></p>
+      </form>
+      <div class="progress">
+        <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100">
         </div>
       </div>
+      <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> tokens sold</p>
+      <br>
+      <div class="alert alert-success" role="alert" align="left" width="5000px">
+        <h4 class="alert-heading">Steps to buy the BLKCT tokens:</h4>
+        <p> <br>
+          1. Install <a href="https://metamask.io/">MetaMask</a> on either Chrome or Firefox. <br>
+          2. Create account on metamask and select Rinkeby Test Network. <br>
+          3. Now goto <a href="http://faucet.rinkeby.io">faucet</a> and follow the instructions on how to get funded. (You can get your account address in MetaMask). <br>
+          4. Once your account has been funded, you can now buy BLKCT Tokens. A MetaMask popup should prompt you to accept the transaction. <br>
+          5. Once you accept, the number of tokens you have purchased will be reflected from your account. (The rinkeby network may take sometime to update, refresh the page to see the changes).</p>
+        <hr>
+        <p class="mb-0">You have sucessfully purchased our test Blockcities Tokens! Thank you.</p>
+      </div>
+      <hr>
+      <p id="accountAddress"></p>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
